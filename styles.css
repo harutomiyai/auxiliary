@@ -1,0 +1,192 @@
+#note-memo-anchor {
+  position: fixed;
+  top: 25%;
+  right: 16px;
+  width: 300px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  z-index: 1;
+  border-radius: 6px;
+  color: #333;
+  overflow-y: auto;
+  max-height: 90vh;
+  pointer-events: auto;
+}
+
+#note-memo-anchor button.toggle-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 4px;
+  z-index: 2147483647;
+}
+
+#note-memo-anchor select {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fafafa;
+  font-family: system-ui, sans-serif;
+  outline: none;
+}
+
+#note-memo-anchor label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #222;
+  font-family: system-ui, sans-serif;
+}
+
+#note-memo-anchor textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  background: #fff;
+  color: #111;
+  font-family: system-ui, sans-serif;
+  outline: none;
+  overflow: hidden;
+}
+
+
+#note-memo-anchor.collapsed {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: #fff !important;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  align-items: center;     /* 縦中央 */
+  justify-content: center; /* 横中央 */
+}
+
+#note-memo-anchor.collapsed button.toggle-btn {
+  position: static;         /* 中央配置のために static に */
+  margin: 0;
+}
+
+#note-memo-anchor {
+  position: fixed;
+  top: 25%;
+  right: 16px;
+  width: 300px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  z-index: 1;
+  border-radius: 6px;
+  color: #333;
+  overflow-y: auto;
+  max-height: 90vh;
+  pointer-events: auto;
+}
+
+#note-memo-anchor .toggle-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+#note-memo-anchor .toggle-btn:hover {
+  background: #f0f0f0;
+  /* border-color: #999; */
+}
+
+#note-memo-anchor .toggle-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2684FF33;
+}
+
+
+
+#note-memo-anchor.collapsed .content-wrap {
+  display: none;
+}
+
+#note-memo-anchor .top-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+#note-memo-anchor .top-controls select {
+  flex: 1;
+  height: 32px;
+  padding: 0 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  font-family: system-ui, sans-serif;
+  outline: none;
+  min-width: 0;
+}
+
+#note-memo-anchor .top-controls select {
+  width: 225px; /* 任意の幅に変更 */
+  flex: unset;  /* flex を無効化して固定幅を有効にする */
+}
+
+
+#note-memo-anchor .question-block label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #222;
+}
+
+#note-memo-anchor .question-block textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  background: #fff;
+  color: #111;
+  font-family: system-ui, sans-serif;
+  outline: none;
+  overflow: hidden;
+}
+

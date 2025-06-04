@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "note構成ツール",
+  "description": "noteエディタで、構成などをサポートします。",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://editor.note.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
